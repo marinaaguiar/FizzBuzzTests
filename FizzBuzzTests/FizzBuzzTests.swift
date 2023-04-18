@@ -11,11 +11,13 @@ final class FizzBuzzTests: XCTestCase {
     var fizzBuzz: FizzBuzz!
 
     override func setUp() {
+        super.setUp()
         fizzBuzz = FizzBuzz()
     }
 
     override func tearDown() {
         fizzBuzz = nil
+        super.tearDown()
     }
 
     func testIsNumberOne() {
